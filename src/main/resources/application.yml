@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3386/yjd?serverTimezone=UTC
+    username: root
+    password: 123456
+  main:
+    banner-mode: off
+server:
+  port: 80
+#开启Mp的日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+    auto-mapping-behavior: full
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+weixin:
+  jscode2sessionUrl: https://api.weixin.qq.com/sns/jscode2session
+  appid: wx959b3026c7135d49
+  secret: 20d20db47a3580602e5d1e23dcb046ab
