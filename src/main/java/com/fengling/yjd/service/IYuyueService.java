@@ -1,14 +1,13 @@
 package com.fengling.yjd.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.fengling.yjd.entity.Course;
+import com.fengling.yjd.entity.Yuyue;
 
 /**
  * @Author: dapyz
- * @Description: 课程service
+ * @Description:
  * @Date: 2022/6/19 22:53
  * @Group: fengling
  */
-
-public interface ICourseService extends IService<Course> {
+public interface IYuyueService extends IService<Yuyue> {
 }

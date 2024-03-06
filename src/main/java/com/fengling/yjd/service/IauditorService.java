@@ -1,13 +1,14 @@
 package com.fengling.yjd.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.fengling.yjd.entity.Video;
+import com.fengling.yjd.entity.auditor;
 
 /**
  * @Author: dapyz
- * @Description:视频service
+ * @Description:
  * @Date: 2022/6/19 22:53
  * @Group: fengling
  */
-public interface IVideoService extends IService<Video> {
+
+public interface IauditorService extends IService<auditor> {
 }

@@ -5,7 +5,7 @@ import com.fengling.yjd.entity.Teacher;
 
 /**
  * @Author: dapyz
- * @Description:
+ * @Description: 指导师接口
  * @Date: 2022/6/19 22:53
  * @Group: fengling
  */

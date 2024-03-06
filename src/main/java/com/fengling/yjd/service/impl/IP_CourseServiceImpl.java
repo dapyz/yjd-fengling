@@ -10,12 +10,13 @@ import javax.annotation.Resource;
 
 /**
  * @Author: dapyz
- * @Description:家长已购买的课程service实现类
+ * @Description: 家长已购买的课程service实现类
  * @Date: 2022/6/19 22:53
  * @Group: fengling
  */
 @Service("p_courseService")
 public class IP_CourseServiceImpl extends ServiceImpl<P_CourseMapper, P_Course> implements IP_CourseService {
+
     @Resource
     private P_CourseMapper p_courseMapper;
 }

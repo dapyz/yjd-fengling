@@ -5,7 +5,7 @@ import com.fengling.yjd.entity.Course;
 
 /**
  * @Author: dapyz
- * @Description:
+ * @Description: 课程接口
  * @Date: 2022/6/19 22:53
  * @Group: fengling
  */

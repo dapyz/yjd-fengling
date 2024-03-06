@@ -2,10 +2,6 @@ package com.fengling.yjd.constant;
 
 /**
  * 系统级静态变量
- * @author java1234_小锋
- * @site www.java1234.com
- * @company Java知识分享网
- * @create 2019-08-13 上午 9:51
  */
 public class SystemConstant {
 
@@ -20,5 +16,5 @@ public class SystemConstant {
      * JWT
      */
     public static final String JWT_SECERT = "8677df7fc3a34e26a61c034d5ec8245d";			//密匙
-    public static final long JWT_TTL = 24*60 * 60 * 1000;									//token有效时间
+    public static final long JWT_TTL = 30 ;									//token有效时间
 }

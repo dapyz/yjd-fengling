@@ -3,5 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fengling.yjd.mapper.ParentMapper">
-
+    <resultMap id="parentResult" type="com.fengling.yjd.entity.Parent"></resultMap>
+    <select id="findByOpenid" parameterType="String" resultMap="parentResult">
+        select * from parent where openid=#{openid}
+    </select>
 </mapper>

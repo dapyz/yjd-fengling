@@ -7,9 +7,14 @@ spring:
     password: 123456
   main:
     banner-mode: off
+  mvc:
+    static-path-pattern: /teacher/**
+  web:
+    resources:
+      static-locations: file:F:\image\teacher\
 server:
   port: 80
-#开启Mp的日志
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -25,3 +30,5 @@ weixin:
   jscode2sessionUrl: https://api.weixin.qq.com/sns/jscode2session
   appid: wx959b3026c7135d49
   secret: 20d20db47a3580602e5d1e23dcb046ab
+
+

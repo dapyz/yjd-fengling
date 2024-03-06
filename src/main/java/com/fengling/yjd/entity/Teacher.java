@@ -24,6 +24,6 @@ public class Teacher {
     private String Tintroduction;
     private Integer CertificateID;
     private BigDecimal TPrice;
-    private String Yuyuetype;
+    private String Timg;
 }
 

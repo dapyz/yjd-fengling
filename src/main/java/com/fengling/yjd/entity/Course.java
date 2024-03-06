@@ -16,4 +16,6 @@ public class Course {
     private Integer Cid;
     private String Cname;
     private String Cintroduction;
+    private String type;
+    private double price;
 }

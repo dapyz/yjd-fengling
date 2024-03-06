@@ -40,7 +40,8 @@ public class HttpClientUtil {
 	 * setSocketTimeout：请求获取数据的超时时间，单位毫秒。访问一个接口，多少时间内无法返回数据，就直接放弃此次调用。 暂时定义15分钟
 	 */
 
-	private RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(600000).setConnectTimeout(600000).setConnectionRequestTimeout(600000).build();
+	private RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(600000).setConnectTimeout(600000)
+			.setConnectionRequestTimeout(600000).build();
 	
 	/**
 	 * 静态内部类---作用：单例产生类的实例

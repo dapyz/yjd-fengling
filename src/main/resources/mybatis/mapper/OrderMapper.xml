@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fengling.yjd.mapper.OrderMapper">
+
+    <resultMap id="orderResult" type="com.fengling.yjd.entity.Order">
+        <association property="parent" column="Userid" select="com.fengling.yjd.mapper.ParentMapper.findByOpenid"></association>
+    </resultMap>
+
+    <select id="list" parameterType="Map" resultMap="orderResult">
+        select * from p_order
+        <where>
+            <if test="Ono!=null and Ono!='' ">
+                and Ono like concat('%',#{Ono},'%')
+            </if>
+        </where>
+        order by Odate desc
+        <if test="start!=null and pageSize!=null">
+            limit #{start},#{pageSize}
+        </if>
+    </select>
+    <select id="getTotal" parameterType="Map" resultType="Long">
+        select count(*) from p_order
+        <where>
+            <if test="Ono!=null and Ono!='' ">
+                and Ono like concat('%',#{Ono},'%')
+            </if>
+        </where>
+    </select>
+</mapper>

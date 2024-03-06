@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * @Author: dapyz
- * @Description:课程service实现类
+ * @Description: 课程service实现类
  * @Date: 2022/6/19 22:53
  * @Group: fengling
  */

@@ -5,7 +5,7 @@ import com.fengling.yjd.entity.P_Course;
 
 /**
  * @Author: dapyz
- * @Description:家长已购买的课程service
+ * @Description: 家长已购买的课程service
  * @Date: 2022/6/19 22:53
  * @Group: fengling
  */

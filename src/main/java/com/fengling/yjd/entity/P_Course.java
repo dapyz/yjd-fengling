@@ -2,6 +2,7 @@ package com.fengling.yjd.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
@@ -11,9 +12,11 @@ import lombok.Data;
  * @Group: fengling
  */
 @Data
+@TableName("pcourse")
 public class P_Course {
-    @TableId(type = IdType.AUTO)
-    private Integer Pid;
+    @TableId(value = "Pc_id",type = IdType.AUTO)
+    private Integer pc_id;
+    private String Userid;
     private Integer Cid;
     private String Cname;
 }
